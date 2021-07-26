@@ -14,10 +14,19 @@
         android:id="@+id/secondFragment"
         android:name="com.hasangurgur.bottomnavigationexample.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.hasangurgur.bottomnavigationexample.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.hasangurgur.bottomnavigationexample.OtherFragment"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" />
 </navigation>

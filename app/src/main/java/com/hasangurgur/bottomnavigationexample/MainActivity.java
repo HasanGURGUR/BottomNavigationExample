@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
 
-
+    NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         BottomNavigationView bottomNavigationView1  =findViewById(R.id.bottomNavigationView);
-        NavController navController = Navigation.findNavController(this,R.id.fragmentContainerView);
+        navController = Navigation.findNavController(this,R.id.fragmentContainerView);
 
         NavigationUI.setupWithNavController(bottomNavigationView1, navController);
 
